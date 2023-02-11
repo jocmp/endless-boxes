@@ -18,12 +18,8 @@ different devices types
 </th>
 <tr>
 <td valign="top">
-<pre lang="graphql">
   <img width="500px" src="./screenshots/mobile-view.png"/>
-</pre>
 </td>
 <td valign="top">
-<pre lang="jsonc">
   <img width="800px" src="./screenshots/desktop-view.png"/>
-</pre>
 </td>
