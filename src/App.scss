@@ -1,0 +1,54 @@
+$tablet-width: 768px;
+
+// https: //davidwalsh.name/write-media-queries-sass
+@mixin mobile {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FBFFFE;
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.footer {
+  @include mobile {
+    position: sticky;
+    bottom: 0;
+  }
+}
+
+.box {
+  border: 0.2rem solid #172121;
+  margin-bottom: 0.2rem;
+
+  &.box--small {
+    height: 50px;
+    background-color: #FE654F;
+  }
+
+  &.box--medium {
+    height: 250px;
+    background-color: #58641D;
+  }
+
+  &.box--large {
+    height: 600px;
+    background-color: #4EA699;
+  }
+}
