@@ -15,27 +15,37 @@ body {
 
 .layout {
   display: flex;
-  flex-direction: row;
+  height: 800px;
+  flex-flow: column wrap;
+
+  @include mobile {
+    flex-flow: column;
+  }
 }
 
 .col-6 {
   width: 50%;
 }
 
-.col-12 {
-  width: 100%;
+.mobile-col-12 {
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .footer {
+  width: 50%;
+
   @include mobile {
     position: sticky;
     bottom: 0;
+    width: 100%;
   }
 }
 
 .box {
   border: 0.2rem solid #172121;
-  margin-bottom: 0.2rem;
+  margin: 0.2rem;
 
   &.box--small {
     height: 50px;
