@@ -5,9 +5,10 @@ different devices types
 
 ## Cast of Characters
 
-- Teal box ................. Left-aligned on desktop, full-width on mobile
-- Green box ................. Right-aligned on desktop, full-width on mobile
+- Teal box ................. Left-aligned on desktop, full-width on mobile, and has collapsable content
+- Olive box ................. Right-aligned on desktop, full-width on mobile
 - Coral box ................. Right-aligned on desktop, full-width and sticky on mobile
+- Crimson box ................. Right-aligned on desktop, full-width on mobile and swaps places with Coral
 
 ## Demo
 

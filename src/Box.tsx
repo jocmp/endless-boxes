@@ -1,15 +1,25 @@
 import classNames from "classnames"
 
 interface Props {
-  variant: 'small' | 'medium' | 'large';
+  variant: 'small' | 'small-alt' | 'medium' | 'medium-alt' | 'large';
+  children?: JSX.Element | null;
 }
 
-export function Box(props: Props) {
+export function Box({
+  variant,
+  children = null
+}: Props) {
   const classes = classNames('box', {
-    'box--small': props.variant === 'small',
-    'box--medium': props.variant === 'medium',
-    'box--large': props.variant === 'large',
+    'box--small': variant === 'small',
+    'box--small-alt': variant === 'small-alt',
+    'box--medium': variant === 'medium',
+    'box--medium-alt': variant === 'medium-alt',
+    'box--large': variant === 'large',
   });
 
-  return <div className={classes} />
+  return (
+    <div className={classes}>
+      {children}
+    </div>
+  );
 }
