@@ -26,3 +26,18 @@ Or run it locally:
 - Olive box ................. Right-aligned on desktop, full-width on mobile
 - Coral box ................. Right-aligned on desktop, full-width and sticky on mobile
 - Crimson box ................. Right-aligned on desktop, full-width on mobile and swaps places with Coral
+
+## Demo
+
+<table>
+<tr>
+<th>Mobile</th>
+<th>Desktop</th>
+</th>
+<tr>
+<td valign="top">
+  <img width="500px" src="./screenshots/mobile-view.png"/>
+</td>
+<td valign="top">
+  <img width="800px" src="./screenshots/desktop-view.png"/>
+</td>
