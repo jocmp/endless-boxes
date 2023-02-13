@@ -1,21 +1,9 @@
 $tablet-width: 768px;
 
-// https: //davidwalsh.name/write-media-queries-sass
+// https://davidwalsh.name/write-media-queries-sass
 @mixin mobile {
   @media (max-width: #{$tablet-width - 1px}) {
     @content;
-  }
-}
-
-@for $i from 1 through 4 {
-  .order-#{$i} {
-    order: #{$i};
-  }
-
-  @include mobile {
-    .mobile-order-#{$i} {
-      order: #{$i};
-    }
   }
 }
 
@@ -26,30 +14,25 @@ body {
 }
 
 .layout {
-  display: flex;
-  flex-flow: column wrap;
-  height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   @include mobile {
-    flex-flow: column;
+    display: block;
   }
 
-  &> :nth-child(1) {
-    min-height: 100%;
-    flex: 1;
+  &> div {
+    grid-column: 2;
+  }
 
-    @include mobile {
-      min-height: initial;
-      flex: 0;
-    }
+  .teal-box {
+    grid-column: 1;
+    grid-row: 1 / span 10;
   }
 }
 
-.footer {
-  order: 4;
-
+.coral-box {
   @include mobile {
-    order: 3;
     position: sticky;
     bottom: 0;
     width: 100%;

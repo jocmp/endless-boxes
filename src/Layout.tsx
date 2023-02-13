@@ -11,7 +11,10 @@ export function Layout() {
 
   return (
     <div className="layout">
-      <div className="order-1">
+      <div className="olive-box">
+        <Box variant="medium" />
+      </div>
+      <div className="teal-box">
         <div>
           <Box variant="medium-alt">
             <button onClick={onClick}>{collapsed ? 'Expand' : 'Collapse'}</button>
@@ -21,14 +24,11 @@ export function Layout() {
           }
         </div>
       </div>
-      <div className="order-2">
-        <Box variant="medium" />
-      </div>
-      <div className="order-3 mobile-order-4">
-        <Box variant="small-alt" />
-      </div>
-      <div className="footer">
+      <div className="coral-box">
         <Box variant="small" />
+      </div>
+      <div>
+        <Box variant="small-alt" />
       </div>
     </div>
   );
